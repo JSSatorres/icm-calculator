@@ -3,7 +3,7 @@
 import { ref } from "vue";
 import { storeToRefs } from "pinia";
 import { useCounterStore } from "../store/counter";
-import { defineProps, defineSlots, defineModel, defineOptions } from "vue";
+import { defineProps } from "vue";
 defineProps<{ msg: string }>();
 
 const { count } = storeToRefs(useCounterStore());
